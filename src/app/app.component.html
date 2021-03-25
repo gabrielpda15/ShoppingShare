@@ -1,0 +1,8 @@
+<app-header *ngIf="enableHeader"></app-header>
+
+<div class="side-bars"></div>
+<div class="content" [class.content-bg]="enableHeader">
+  <router-outlet></router-outlet>
+</div>
+
+<app-spinner></app-spinner>
